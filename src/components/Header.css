@@ -1,0 +1,12 @@
+.navBar{
+    /* display: grid;
+    grid-template-columns: auto auto auto; */
+    background-color: rgba(72, 92, 52, 0.85);
+}
+.logo{
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+}
