@@ -1,20 +1,12 @@
-import Data from '.././data/Data';
+import {Data, Box} from '../data/Data';
 
 function Home () {
     return(
-        <>
-        { 
-            Data.map((value, index)=>(
-                <div key={index}>
-                    <img src={value.img}/>
-                    <h2>{value.name}</h2>
-                    <p>{value.price}</p>
-                </div>
-            ))
-        }
-        </>
+        <div>
+            {Data.map((value)=><Box key={value.id} name={value.name} price={value.price} img={value.img}/>)}
+        </div>
     )
-    }
+}
 
 export default Home;
   
