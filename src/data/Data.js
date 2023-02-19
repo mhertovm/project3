@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 
 const Data = [
     {
@@ -23,13 +24,18 @@ const Data = [
     },
 ]
 
+
+
+
 function Box (props) {
     return (
-        <button key={props.key}>
-            <li><img src={props.img}/></li>
-            <li>{props.name}</li>
-            <li>{props.price}</li>
-        </button>
+        <div>
+        <Link to={props.key}>
+            <><img src={props.img}/></>
+            <p>{props.name}</p>
+            <p>{props.price}</p>
+        </Link>
+        </div>
     )
 }
 
