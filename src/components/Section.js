@@ -9,7 +9,7 @@ function Section() {
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/contact" element={<Contact />}/>
-          <Route path=":id" element={<Product />}/>
+          <Route path="/product/:id" element={<Product />}/>
         </Routes>
     );
   }

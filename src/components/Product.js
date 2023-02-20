@@ -4,6 +4,7 @@ import { Data } from '../data/Data';
 function Product () {
   const {id} = useParams()
 const prodId=Data[id]
+
   return (
   <div>
     <><img src={prodId.img}/></>
