@@ -30,7 +30,7 @@ const Data = [
 function Box (props) {
     return (
         <div>
-        <Link to={props.key}>
+        <Link to={"/" + props.id}>
             <><img src={props.img}/></>
             <p>{props.name}</p>
             <p>{props.price}</p>
