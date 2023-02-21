@@ -4,13 +4,13 @@ import {Link} from 'react-router-dom';
 
 function Header() {
     return (
-        <header>
-            <img className="logo" src="img/logo.png" alt="Logo"/>
+        <header className="header">
+            <Link to={"/"}><img className="logo" src="img/logo.png" alt="Logo"/></Link>
 
-                <ul className="navBar">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                </ul>
+            <div className="navBar">
+                <Link to="/" class="link">Home</Link>
+                <Link to="/contact" class="link">Contact</Link>
+            </div>
 
 
             

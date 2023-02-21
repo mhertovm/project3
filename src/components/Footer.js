@@ -1,9 +1,10 @@
-
+import './Footer.css'
 
 function Footer() {
     return (
-        <div>
-            
+        <div class="footer">
+            <>Contact:</><br/>
+            <>e-mail: mhertovmasyan904@gmail.com</>
         </div>
     );
   }
