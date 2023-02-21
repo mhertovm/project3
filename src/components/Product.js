@@ -7,7 +7,7 @@ function Product () {
 const prodId=Data[id]
 
   return (
-  <div class="product">
+  <div className="product">
     <p><img src={prodId.img}/></p>
     <p>{prodId.name}</p>
     <p>{prodId.price}</p>

@@ -4,7 +4,7 @@ import './Home.css'
 
 function Home () {
     return(
-        <div class="home">
+        <div className="home">
             {Data.map((value)=><Box id={value.id} key={value.id} name={value.name} price={value.price} img={value.img}/>)}
         </div>
     )

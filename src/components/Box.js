@@ -3,8 +3,8 @@ import './Box.css'
 
 function Box (props) {
     return (
-        <div class="box">
-        <Link to={"/product/" + props.id} class="box-link">
+        <div className="box">
+        <Link to={"/product/" + props.id} className="box-link">
             <p><img src={props.img}/></p>
             <p>{props.name}</p>
             <p>{props.price}</p>

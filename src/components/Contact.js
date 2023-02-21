@@ -2,7 +2,7 @@ import './Contact.css'
 
 function Contact() {
     return (
-      <div class="contact">
+      <div className="contact">
         <h1>Select your Location</h1>
         <h2>Asia Pacific</h2>
         <a>Australia</a>

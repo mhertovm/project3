@@ -2,7 +2,7 @@ import './Footer.css'
 
 function Footer() {
     return (
-        <div class="footer">
+        <div className="footer">
             <>Contact:</><br/>
             <>e-mail: mhertovmasyan904@gmail.com</>
         </div>
