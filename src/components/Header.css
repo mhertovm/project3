@@ -1,6 +1,12 @@
+
+header{
+    position: sticky;
+    top: 0; 
+}
+
 .navBar{
     display: flex;
-    background-color: rgb(230, 230, 230);
+    background-color: rgba(230, 230, 230, 0.7);
     padding: 10px 85px;
     text-decoration: none;
 
