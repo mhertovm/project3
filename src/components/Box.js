@@ -9,7 +9,8 @@ function Box (props) {
             <p><img src={props.img}/></p>
             <p>{props.name}</p>
             <p>{props.price}</p>
-        </Link>        
+        </Link> 
+        <button className='btn' onClick={props.handleClick}><img className='btnicon' src='../img/buyicon.png'/>Add to cart</button>     
         </div>
     )
 }

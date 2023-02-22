@@ -1,12 +1,17 @@
 
 header{
+    display: flex;
+    justify-content: space-between;
     position: sticky;
     top: 0; 
+    background-color: rgba(230, 230, 230, 0.7);
+    width: 100%;
+    align-items: center;
 }
 
 .navBar{
     display: flex;
-    background-color: rgba(230, 230, 230, 0.7);
+
     padding: 10px 85px;
     text-decoration: none;
 
@@ -25,4 +30,11 @@ header{
 }
 .link:hover{
     color: rgb(30, 120, 100);
+}
+.cart{
+    padding: 0px 100px;
+}
+.buyicon{
+    width: 50px;
+    height: 50px;
 }

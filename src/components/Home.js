@@ -4,10 +4,10 @@ import './Home.css'
 
 
 
-function Home () {
+function Home (props) {
     return(
         <div className="home">
-            {Data.map((value)=><Box id={value.id} key={value.id} name={value.name} price={value.price} img={value.img}/>)}
+            {Data.map((value)=><Box id={value.id} key={value.id} name={value.name} price={value.price} img={value.img} handleClick={props.handleClick}/>)}
         </div>
     )
 }

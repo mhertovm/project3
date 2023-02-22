@@ -4,10 +4,10 @@ import Contact from './Contact';
 import Product from './Product';
 
 
-function Section() {
+function Section(props) {
     return (
         <Routes>
-          <Route path="/" element={<Home />}/>
+          <Route path="/" element={<Home handleClick={props.handleClick}/>}/>
           <Route path="/contact" element={<Contact />}/>
           <Route path="/product/:id" element={<Product />}/>
         </Routes>
