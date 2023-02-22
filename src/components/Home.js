@@ -2,6 +2,8 @@ import Data from '../data/Data';
 import Box from './Box';
 import './Home.css'
 
+
+
 function Home () {
     return(
         <div className="home">
