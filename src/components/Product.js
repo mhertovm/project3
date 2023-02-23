@@ -4,7 +4,7 @@ import './Product.css'
 
 function Product () {
   const {id} = useParams()
-const prodId=Data[id]
+const prodId=Data[id-1]
 
   return (
   <div className="product">

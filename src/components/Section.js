@@ -7,7 +7,7 @@ import Product from './Product';
 function Section(props) {
     return (
         <Routes>
-          <Route path="/" element={<Home handleClick={props.handleClick}/>}/>
+          <Route path="/" element={<Home handleClick={props.handleClick} minclick={props.minclick}/>}/>
           <Route path="/contact" element={<Contact />}/>
           <Route path="/product/:id" element={<Product />}/>
         </Routes>
