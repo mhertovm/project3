@@ -12,13 +12,10 @@ function App() {
   function handleClick(){
     setcount(count+1)
   }
-  function minclick(){
-    setcount(count-1)
-  }
   return (
     <div className="App">
       <Header count={count}/>
-      <Section handleClick={handleClick} minclick={minclick}/>
+      <Section handleClick={handleClick}/>
       <Footer />
     </div>
   );

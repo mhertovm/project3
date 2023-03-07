@@ -7,9 +7,9 @@ import Product from './Product';
 function Section(props) {
     return (
         <Routes>
-          <Route path="/" element={<Home handleClick={props.handleClick} minclick={props.minclick}/>}/>
+          <Route path="/" element={<Home handleClick={props.handleClick}/>}/>
           <Route path="/contact" element={<Contact />}/>
-          <Route path="/product/:id" element={<Product />}/>
+          <Route path="/shoes/:id" element={<Product />}/>
         </Routes>
     );
   }

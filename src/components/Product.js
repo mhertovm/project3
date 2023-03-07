@@ -1,17 +1,22 @@
 import { useParams } from 'react-router-dom';
-import Data from '../data/Data';
 import './Product.css'
+import { useEffect, useState } from 'react';
 
 function Product () {
   const {id} = useParams()
-const prodId=Data[id-1]
 
+  const [data, setdata]=useState([]);
+  useEffect(()=>{
+      fetch("http://localhost:3001/shoes/"+id)
+      .then(res=> res.json())
+      .then(res=> setdata(res));
+  },[])
   return (
   <div className="product">
-    <p><img src={prodId.img}/></p>
-    <p>{prodId.name}</p>
-    <p>{prodId.price}</p>
-    <p style={{width:500}}>{prodId.info}</p>
+    <p><img style={{width: 300, height: 300}} src={data.img}/></p>
+    <p>{data.name}</p>
+    <p>{data.price}</p>
+    <p style={{width:500}}>{data.info}</p>
   </div>
   )
 }
